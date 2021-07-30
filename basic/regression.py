@@ -38,7 +38,7 @@ class Net(torch.nn.Module):
 # # plt.ion()
 # # plt.show()
 #
-# for _ in range(300):
+# for t in range(300):
 #     prediction = net(x)
 #     loss = loss_func(prediction, y)
 #
