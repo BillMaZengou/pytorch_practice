@@ -2,6 +2,7 @@ import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
+"""---Make Data---"""
 n_data = torch.ones(100, 2)
 x0 = torch.normal(2*n_data, 1)
 y0 = torch.zeros(100)
