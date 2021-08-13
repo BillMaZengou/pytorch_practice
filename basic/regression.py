@@ -36,8 +36,8 @@ optimizer = torch.optim.Adam(net.parameters(), lr=0.01)
 loss_func = torch.nn.MSELoss()
 
 """---Visualisation P1---"""
-plt.ion()
-plt.show()
+# plt.ion()
+# plt.show()
 
 for t in range(300):
     prediction = net(x)
@@ -48,16 +48,16 @@ for t in range(300):
     optimizer.step()
 
     """---Visualisation P2---"""
-    if t % 5 ==0:
-        plt.cla()
-        plt.scatter(x.data.numpy(), y.data.numpy())
-        plt.plot(x.data.numpy(), prediction.data.numpy(), "r-", lw=3)
-        plt.text(0.5, 0, "Loss=%.4f" % loss.data.numpy(),
-                fontdict={"size": 15, "color": "blue"})
-        plt.pause(0.1)
-
-
-"""---Visualisation P3 (if hold)---"""
+#     if t % 5 ==0:
+#         plt.cla()
+#         plt.scatter(x.data.numpy(), y.data.numpy())
+#         plt.plot(x.data.numpy(), prediction.data.numpy(), "r-", lw=3)
+#         plt.text(0.5, 0, "Loss=%.4f" % loss.data.numpy(),
+#                 fontdict={"size": 15, "color": "blue"})
+#         plt.pause(0.1)
+#
+#
+# """---Visualisation P3 (if hold)---"""
 # plt.ioff()
 # plt.show()
 

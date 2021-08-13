@@ -68,5 +68,5 @@ for t in range(300):
         plt.pause(0.1)
 
 """---Visualisation P3 (if hold)---"""
-# plt.ioff()
-# plt.show()
+plt.ioff()
+plt.show()

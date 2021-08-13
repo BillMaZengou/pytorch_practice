@@ -63,7 +63,6 @@ loss_func = nn.MSELoss()
 """--- visualization P1 ---"""
 # fig, ax = plt.subplots(2, N_TEST_IMG, figsize=(5, 2))
 # plt.ion()
-#
 # view_data = train_data.train_data[:N_TEST_IMG].view(-1, 28*28).type(torch.FloatTensor)/255.
 # for i in range(N_TEST_IMG):
 #     ax[0][i].imshow(np.reshape(view_data.data.numpy()[i], (28, 28)), cmap="gray")
