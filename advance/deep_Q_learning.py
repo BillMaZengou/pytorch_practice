@@ -86,6 +86,7 @@ class DQN(object):
 
 dqn = DQN()
 
+print('\nCollecting experience...')
 for i_episode in range(400):
     s = env.reset()
     ep_R = 0
